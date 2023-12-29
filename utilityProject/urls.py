@@ -16,11 +16,11 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-
+from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 from qrApp.views import inicio, procesar_datos
-
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', inicio, name='index'),
     path('qr/', procesar_datos, name='procesar_datos')
 ]
+urlpatterns+= staticfiles_urlpatterns()
