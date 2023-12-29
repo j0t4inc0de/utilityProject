@@ -23,4 +23,4 @@ urlpatterns = [
     path('', inicio, name='index'),
     path('qr/', procesar_datos, name='procesar_datos')
 ]
-urlpatterns+= staticfiles_urlpatterns()
+urlpatterns+= staticfiles_urlpatterns() #Para que se puedan ver los archivos estaticos en heroku
