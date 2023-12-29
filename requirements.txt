@@ -6,3 +6,4 @@ Pillow==10.1.0
 pypng==0.20220715.0
 pytz==2023.3.post1
 qrcode==7.4.2
+gunircorn
